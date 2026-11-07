@@ -1,0 +1,63 @@
+{
+  "schema": "pharos-wallet-risk-mainnet-verification-v1",
+  "verifiedAtUtc": "2026-11-07T08:04:55.989Z",
+  "sourceWorkflow": {
+    "unitAndRealMcp": "https://github.com/trantanlong2411-droid/Wallet-Risk-Checker/actions/runs/42353909000",
+    "deployed": "https://github.com/trantanlong2411-droid/Wallet-Risk-Checker/actions/runs/42353908983"
+  },
+  "publicApp": "https://wallet-risk-checker.trantanlong2411.workers.dev/",
+  "chainId": 1672,
+  "chain": "Pharos Mainnet",
+  "sampleWallet": "0xfaC0718D882E5f07e1972D617bd430CD72A55D84",
+  "blockNumber": 22358700,
+  "observedBalancePROS": "4.78258901",
+  "observedNonce": 2,
+  "monitoredTokens": [
+    "USDC",
+    "WPROS",
+    "WETH"
+  ],
+  "approvalEventWindows": [
+    {
+      "fromBlock": 22357701,
+      "toBlock": 22358700
+    },
+    {
+      "fromBlock": 22207701,
+      "toBlock": 22208700
+    },
+    {
+      "fromBlock": 21857701,
+      "toBlock": 21858700
+    }
+  ],
+  "successfulLogWindows": 9,
+  "totalLogWindows": 9,
+  "observedApprovalEvents": 0,
+  "currentUSDCAllowances": [
+    {
+      "spender": "0x1c2bc8b553d9a7E61F7531a3a4bF2162F4569268",
+      "label": "R25",
+      "amountRaw": "0",
+      "verifiedOnChain": true
+    },
+    {
+      "spender": "0xda464e68208A3083Eb65FE5c522a72AeD1C1372a",
+      "label": "Zona",
+      "amountRaw": "0",
+      "verifiedOnChain": true
+    }
+  ],
+  "exposureIndex": 0,
+  "indexInterpretation": "No major approval-exposure signal observed in this narrow scope. NOT a claim that the wallet is safe.",
+  "liveIntegrationSuccess": true,
+  "deployedWorkerVerified": true,
+  "unitTests": "passed",
+  "limitations": [
+    "Not a complete approval history, scanner uses small noncontiguous block windows.",
+    "No claim of malicious behavior or user identity.",
+    "Other tokens, NFT approvals, Permit2 and off-chain signatures not included.",
+    "Risk scoring tests involving infinite approvals are simulated fixtures, not a real unsafe wallet.",
+    "No wallet connection, private key, transaction broadcast or revocation."
+  ]
+}
